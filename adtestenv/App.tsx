@@ -61,11 +61,12 @@ function App(): React.JSX.Element {
   };
 
   return (
-    <NavigationContainer>
-      <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
-      <Stack.Screen name="Login" component={Login} />
-      </Stack.Navigator>
-    </NavigationContainer>
+    // <NavigationContainer>
+    //   <Stack.Navigator initialRouteName="Login" screenOptions={{ headerShown: false }}>
+    //   <Stack.Screen name="Login" component={Login} />
+    //   </Stack.Navigator>
+    // </NavigationContainer>
+    <Login />
   );
 }
 
@@ -87,15 +88,9 @@ function Login(){
     backgroundColor: isDarkMode ? Colors.darker : Colors.lighter,
   };
    return(
-    <SafeAreaView style={backgroundStyle}>
-    <StatusBar
-      barStyle={isDarkMode ? 'light-content' : 'dark-content'}
-      backgroundColor={backgroundStyle.backgroundColor}
-    />
       <View style={styles.main}>
         <Text>Testing</Text>
       </View>
-  </SafeAreaView>
    );
 }
 
